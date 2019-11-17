@@ -25,7 +25,7 @@ bool ConvertSudoku(Mat ImgSudoku)
 		Scalar color(rand() & 255, rand() & 255, rand() & 255);
 		drawContours(finalImage, contours, idx, color, FILLED, 8, hierarchy);
 	}
-	imshow("Image_Binary", finalImage);
+	imshow("Image_Final", finalImage);
 	cv::waitKey();
 	return true;
 }
