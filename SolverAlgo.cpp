@@ -6,7 +6,7 @@ using namespace cv;
 using namespace std;
 int main()
 {
-	Mat ImgSudoku = imread("C:\\Users\\faube\\source\\repos\\SudokuSolver\\SudokuSolver\\src\\TestSudoku2.jpg");
+	Mat ImgSudoku = imread("C:\\Users\\faube\\source\\repos\\SudokuCamera\\SudokuCamera\\SudokuSolver\\TestSudoku2.jpg");
 	
 	bool ConversionSuccess = ConvertSudoku(ImgSudoku);
 	int exampleSudoku[N][N] = { {3, 0, 6, 5, 0, 8, 4, 0, 0},

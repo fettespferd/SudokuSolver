@@ -20,7 +20,12 @@ bool ConvertSudoku(Mat ImgSudoku)
 	vector<Vec4i> hierarchy;
 	findContours(bwImage, contours, hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE);
 	int idx = 0;
-	
+	for (; idx >= 0; idx = hierarchy[idx][0])
+	{
+		Scalar color(rand() & 255, rand() & 255, rand() & 255);
+		drawContours(finalImage, contours, idx, color, FILLED, 8, hierarchy);
+	}
+	namedWindow("Image_Temp", 1);
 	imshow("Image_Temp", finalImage);
 	cv::waitKey();
 	return true;
