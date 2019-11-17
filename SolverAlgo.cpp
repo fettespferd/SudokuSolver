@@ -1,7 +1,7 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
-#include <C:\Users\faube\source\repos\SudokuSolver\SudokuSolver\src\ExtractSudoku.h>
-#include <C:\Users\faube\source\repos\SudokuSolver\SudokuSolver\src\sudoku.h>
+#include <C:\Users\faube\source\repos\SudokuCamera\SudokuCamera\SudokuSolver\ExtractSudoku.h>
+#include <C:\Users\faube\source\repos\SudokuCamera\SudokuCamera\SudokuSolver\sudoku.h>
 using namespace cv;
 using namespace std;
 int main()
