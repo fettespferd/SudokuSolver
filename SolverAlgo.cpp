@@ -25,7 +25,7 @@ int main()
 	}
 	else
 	{
-		cout << "The Sudoku could not be solved: ";
+		cout << "The Sudoku could not be solved! ";
 	}
 	return 0;
 }
