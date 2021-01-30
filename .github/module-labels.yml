@@ -1,0 +1,20 @@
+"M: app":
+  - flutter/lib/app/**/*
+"M: auth":
+  - flutter/lib/auth/**/*
+"M: challenge":
+  - flutter/lib/challenge/**/*
+"M: content":
+  - flutter/lib/content/**/*
+"M: creation":
+  - flutter/lib/creation/**/*
+"M: explore":
+  - flutter/lib/explore/**/*
+"M: feed":
+  - flutter/lib/feed/**/*
+"M: messenger":
+  - flutter/lib/messenger/**/*
+"M: settings":
+  - flutter/lib/settings/**/*
+"P: app":
+  - flutter/**/*

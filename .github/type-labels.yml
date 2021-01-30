@@ -1,0 +1,12 @@
+"T: build":
+  branch: "^build/.*"
+"T: change":
+  branch: "^change/.*"
+"T: docs":
+  branch: "^docs/.*"
+"T: feat":
+  branch: "^feat/.*"
+"T: fix":
+  branch: "^fix/.*"
+"T: refactor":
+  branch: "^refactor/.*"

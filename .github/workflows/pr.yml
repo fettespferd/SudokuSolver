@@ -1,0 +1,32 @@
+name: PR
+
+on: [pull_request]
+
+jobs:
+  add-type-labels:
+    name: Add type labels
+    runs-on: ubuntu-latest
+    steps:
+      - uses: srvaroa/labeler@v0.3
+        with:
+          config_path: .github/type-labels.yml
+        env:
+          GITHUB_TOKEN: "${{ secrets.BOT_TOKEN }}"
+
+  add-module-labels:
+    name: Add module labels
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v2
+        with:
+          configuration-path: .github/module-labels.yml
+          repo-token: "${{ secrets.BOT_TOKEN }}"
+
+  assign-author:
+    name: Assign author
+    if: github.event.action == 'opened'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: samspills/assign-pr-to-author@v1.0
+        with:
+          repo-token: "${{ secrets.BOT_TOKEN }}"
