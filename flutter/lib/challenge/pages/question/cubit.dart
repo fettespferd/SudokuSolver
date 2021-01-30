@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:smusy_v2/app/module.dart';
-import 'package:smusy_v2/content/module.dart';
+import 'package:sudokuSolver/app/module.dart';
+import 'package:sudokuSolver/content/module.dart';
 
 import '../../models.dart';
 

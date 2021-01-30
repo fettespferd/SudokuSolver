@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smusy_v2/app/module.dart';
+import 'package:sudokuSolver/app/module.dart';
 import 'package:streaming_shared_preferences/streaming_shared_preferences.dart';
 
 import '../preferences.dart';
@@ -29,12 +29,6 @@ class SettingsPage extends StatelessWidget {
             leading: Icon(Icons.update),
             title: Text('Version'),
             subtitle: Text(appVersion),
-          ),
-          ListTile(
-            onTap: () => tryLaunchingUrl(smusyWebUrl('kontakt')),
-            leading: Icon(Icons.mail_outline),
-            title: Text(context.s.settings_contact),
-            trailing: Icon(Icons.open_in_new),
           ),
           LegalBar(),
         ],

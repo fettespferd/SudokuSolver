@@ -1,12 +1,12 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
-#include <C:\Users\faube\source\repos\SudokuCamera\SudokuCamera\SudokuSolver\ExtractSudoku.h>
-#include <C:\Users\faube\source\repos\SudokuCamera\SudokuCamera\SudokuSolver\sudoku.h>
+#include <C:\Users\faube\source\repos\SudokuCamera\SudokuCamera\sudokuSolver\ExtractSudoku.h>
+#include <C:\Users\faube\source\repos\SudokuCamera\SudokuCamera\sudokuSolver\sudoku.h>
 using namespace cv;
 using namespace std;
 int main()
 {
-	Mat ImgSudoku = imread("C:\\Users\\faube\\source\\repos\\SudokuCamera\\SudokuCamera\\SudokuSolver\\TestSudoku2.jpg");
+	Mat ImgSudoku = imread("C:\\Users\\faube\\source\\repos\\SudokuCamera\\SudokuCamera\\sudokuSolver\\TestSudoku2.jpg");
 	
 	bool ConversionSuccess = ConvertSudoku(ImgSudoku);
 	int exampleSudoku[N][N] = { {3, 0, 6, 5, 0, 8, 4, 0, 0},

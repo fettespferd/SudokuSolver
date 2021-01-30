@@ -1,4 +1,4 @@
-# smusy_v2
+# sudokuSolver
 
 This is the second version of the app to be released in Q3 2021.
 

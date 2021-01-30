@@ -39,7 +39,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "app.smusy"
+        applicationId "app.sudokuSolver"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode flutterVersionCode.toInteger()

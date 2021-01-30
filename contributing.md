@@ -6,7 +6,7 @@
 - install [<img src="https://github.githubassets.com/pinned-octocat.svg" width="16" height="16"> GitHub Desktop](https://desktop.github.com)
 - install [<img src="https://code.visualstudio.com/favicon.ico" width="16" height="16"> Visual Studio Code](https://code.visualstudio.com) (VS Code)
 - install [<img src="https://flutter.dev/images/favicon.png" width="16" height="16"> Flutter](https://flutter.dev/docs/get-started/install)
-- clone this repository by running `git clone https://github.com/smusy-GmbH/smusy_v2.git` in your terminal
+- clone this repository by running `git clone https://github.com/smusy-GmbH/sudokuSolver.git` in your terminal
 - open the workspace `./smusy.code-workspace` in VS Code
   - You'll probably see notifications asking you to install some extensions and get packages. Please confirm these two actions.
 - For running the app on <kbd>Android</kbd>: Download the `google-services.json` from [Firebase](https://console.firebase.google.com/u/0/project/smusy-dev/settings/general/android:app.smusy.dev) and store it in `./flutter/android/app/src/debug`.
@@ -18,10 +18,10 @@ You should now be able to run the app by opening the debug panel on the left and
 
 ## Selecting an issue
 
-Visit the [issues page](https://github.com/smusy-GmbH/smusy_v2/issues) and look for an interesting problem you want to solve.
+Visit the [issues page](https://github.com/smusy-GmbH/sudokuSolver/issues) and look for an interesting problem you want to solve.
 
-- If you're new to this project, we recommend issues tagged with [<kbd>good first issue</kbd>](https://github.com/smusy-GmbH/smusy_v2/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+no%3Aassignee).
-- We use GitHub projects to plan our next steps and set priorities: [smusy_v2/projects](https://github.com/smusy-GmbH/smusy_v2/projects).
+- If you're new to this project, we recommend issues tagged with [<kbd>good first issue</kbd>](https://github.com/smusy-GmbH/sudokuSolver/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+no%3Aassignee).
+- We use GitHub projects to plan our next steps and set priorities: [sudokuSolver/projects](https://github.com/smusy-GmbH/sudokuSolver/projects).
 
 Once you have selected an issue to work on, assign yourself to that issue so we don't end up with two people doing the same thing^^
 

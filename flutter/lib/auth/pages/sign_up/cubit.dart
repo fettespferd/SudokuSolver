@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:smusy_v2/app/module.dart';
+import 'package:sudokuSolver/app/module.dart';
 
 part 'cubit.freezed.dart';
 

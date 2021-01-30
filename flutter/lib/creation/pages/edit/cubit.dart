@@ -4,9 +4,9 @@ import 'dart:typed_data';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image/image.dart' as img;
-import 'package:smusy_v2/app/module.dart';
-import 'package:smusy_v2/auth/module.dart';
-import 'package:smusy_v2/content/module.dart';
+import 'package:sudokuSolver/app/module.dart';
+import 'package:sudokuSolver/auth/module.dart';
+import 'package:sudokuSolver/content/module.dart';
 
 part 'cubit.freezed.dart';
 

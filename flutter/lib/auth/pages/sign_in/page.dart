@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:smusy_v2/app/module.dart';
+import 'package:sudokuSolver/app/module.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
-import 'package:smusy_v2/settings/module.dart';
+import 'package:sudokuSolver/settings/module.dart';
 
 import '../../widgets/black_button.dart';
 import 'cubit.dart';

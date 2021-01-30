@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
-import 'package:smusy_v2/app/module.dart';
-import 'package:smusy_v2/content/module.dart';
+import 'package:sudokuSolver/app/module.dart';
+import 'package:sudokuSolver/content/module.dart';
 
 import 'cubit.dart';
 

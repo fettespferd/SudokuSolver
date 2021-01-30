@@ -1,4 +1,4 @@
-import 'package:smusy_v2/app/module.dart';
+import 'package:sudokuSolver/app/module.dart';
 
 part 'models.freezed.dart';
 

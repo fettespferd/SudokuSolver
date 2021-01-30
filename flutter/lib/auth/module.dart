@@ -1,5 +1,5 @@
 import 'package:flutter_deep_linking/flutter_deep_linking.dart';
-import 'package:smusy_v2/app/module.dart';
+import 'package:sudokuSolver/app/module.dart';
 
 import 'pages/password_reset/page.dart';
 import 'pages/sign_in/page.dart';

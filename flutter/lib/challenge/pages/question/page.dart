@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:smusy_v2/app/module.dart';
-import 'package:smusy_v2/challenge/models.dart';
+import 'package:sudokuSolver/app/module.dart';
+import 'package:sudokuSolver/challenge/models.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 import 'cubit.dart';

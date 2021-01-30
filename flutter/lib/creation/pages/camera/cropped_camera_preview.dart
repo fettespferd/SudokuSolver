@@ -2,8 +2,8 @@ import 'dart:math' as math;
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:smusy_v2/app/module.dart';
-import 'package:smusy_v2/content/module.dart';
+import 'package:sudokuSolver/app/module.dart';
+import 'package:sudokuSolver/content/module.dart';
 
 /// Previews the camera feed while indicating the portion that's visible after
 /// cropping.

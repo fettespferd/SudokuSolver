@@ -5,9 +5,9 @@ import 'package:open_file/open_file.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:smusy_v2/app/module.dart';
-import 'package:smusy_v2/auth/module.dart';
-import 'package:smusy_v2/content/module.dart';
+import 'package:sudokuSolver/app/module.dart';
+import 'package:sudokuSolver/auth/module.dart';
+import 'package:sudokuSolver/content/module.dart';
 
 part 'cubit.freezed.dart';
 

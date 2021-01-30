@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:smusy_v2/app/module.dart';
-import 'package:smusy_v2/auth/module.dart';
-import 'package:smusy_v2/settings/module.dart';
+import 'package:sudokuSolver/app/module.dart';
+import 'package:sudokuSolver/auth/module.dart';
+import 'package:sudokuSolver/settings/module.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,7 +16,7 @@ Future<void> main() async {
 
   final isSignedIn = services.auth.isSignedIn;
   logger.i('User is signed in already: $isSignedIn.');
-  runApp(SmusyApp(isSignedInInitially: isSignedIn));
+  runApp(SudokuSolverApp(isSignedInInitially: isSignedIn));
 }
 
 void _showLoadingPage() {

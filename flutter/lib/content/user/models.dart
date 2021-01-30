@@ -1,5 +1,5 @@
-import 'package:smusy_v2/app/module.dart';
-import 'package:smusy_v2/auth/module.dart';
+import 'package:sudokuSolver/app/module.dart';
+import 'package:sudokuSolver/auth/module.dart';
 
 import '../models.dart';
 

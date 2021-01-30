@@ -1,6 +1,6 @@
 import 'package:get_it/get_it.dart';
-import 'package:smusy_v2/app/module.dart';
-import 'package:smusy_v2/content/module.dart';
+import 'package:sudokuSolver/app/module.dart';
+import 'package:sudokuSolver/content/module.dart';
 
 class AuthService {
   bool get isSignedIn => services.firebaseAuth.currentUser != null;

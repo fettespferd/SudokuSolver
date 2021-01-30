@@ -71,24 +71,24 @@ class _BottomTab {
   static final feed = _BottomTab(
     icon: Icons.dashboard_outlined,
     title: (s) => s.app_bottomNav_stream,
-    initialRoute: webUrl('feed'),
+    initialRoute: 'feed',
   );
   static final discover = _BottomTab(
     key: ValueKey<String>('navigation-discover'),
     icon: Icons.search_outlined,
     title: (s) => s.app_bottomNav_discover,
-    initialRoute: webUrl('discover'),
+    initialRoute: 'discover',
   );
   static final challenge = _BottomTab(
     key: ValueKey<String>('navigation-challenge'),
     icon: Icons.flash_on_outlined,
     title: (s) => s.app_bottomNav_challenge,
-    initialRoute: webUrl('challenges'),
+    initialRoute: 'challenges',
   );
   static final favorite = _BottomTab(
     key: ValueKey<String>('navigation-profile'),
     icon: Icons.person,
     title: (s) => s.app_bottomNav_profile,
-    initialRoute: webUrl('profile'),
+    initialRoute: 'profile',
   );
 }

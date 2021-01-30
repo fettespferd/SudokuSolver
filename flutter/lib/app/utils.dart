@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:time_machine/time_machine.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:basics/basics.dart';
-import 'package:smusy_v2/generated/l10n.dart';
+import 'package:sudokuSolver/generated/l10n.dart';
 
 import 'logger.dart';
 

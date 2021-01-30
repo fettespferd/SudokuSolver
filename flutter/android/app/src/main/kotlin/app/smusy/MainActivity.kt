@@ -1,4 +1,4 @@
-package app.smusy
+package app.sudokuSolver
 
 import io.flutter.embedding.android.FlutterActivity
 

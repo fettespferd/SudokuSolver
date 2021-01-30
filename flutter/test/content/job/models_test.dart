@@ -1,4 +1,4 @@
-import 'package:smusy_v2/content/job/models.dart';
+import 'package:sudokuSolver/content/job/models.dart';
 
 import 'package:test/test.dart';
 

@@ -35,7 +35,7 @@ return Container(
 
 ### 1.3. `import`
 
-Imports of packages and other modules are absolute (`import 'package:flutter/material.dart'`, `import 'package:smusy_v2/app/module.dart'`), whereas imports of files in the same module are relative (`import '../utils.dart'`).
+Imports of packages and other modules are absolute (`import 'package:flutter/material.dart'`, `import 'package:sudokuSolver/app/module.dart'`), whereas imports of files in the same module are relative (`import '../utils.dart'`).
 
 ## 2. Naming
 

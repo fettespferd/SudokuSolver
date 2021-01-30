@@ -1,12 +1,12 @@
 import 'package:black_hole_flutter/black_hole_flutter.dart';
 import 'package:flutter/material.dart' hide Route, Router;
 import 'package:flutter_deep_linking/flutter_deep_linking.dart';
-import 'package:smusy_v2/auth/module.dart';
-import 'package:smusy_v2/challenge/module.dart';
-import 'package:smusy_v2/creation/module.dart';
-import 'package:smusy_v2/feed/module.dart';
-import 'package:smusy_v2/profile/module.dart';
-import 'package:smusy_v2/settings/module.dart';
+import 'package:sudokuSolver/auth/module.dart';
+import 'package:sudokuSolver/challenge/module.dart';
+import 'package:sudokuSolver/creation/module.dart';
+import 'package:sudokuSolver/feed/module.dart';
+import 'package:sudokuSolver/profile/module.dart';
+import 'package:sudokuSolver/settings/module.dart';
 
 import 'pages/main.dart';
 import 'services.dart';
@@ -14,16 +14,13 @@ import 'utils.dart';
 
 String appSchemeUrl(String path) =>
     'app://${services.packageInfo.packageName}/$path';
-String webUrl(String path) => 'https://smusy.app/$path';
-String smusyWebUrl(String path) => 'https://smusy.de/$path';
 
-final _hostRegExp = RegExp('(?:www\.)?smusy\.app');
+final _hostRegExp = RegExp('(?:www\.)?sudokuSolver\.app');
 
 final router = Router(
   routes: [
     Route(
-      matcher: Matcher.scheme('app') &
-          Matcher.host(services.packageInfo.packageName),
+      matcher: Matcher.scheme('app'),
       routes: [
         Route(
           matcher: Matcher.path('main'),
