@@ -21,7 +21,7 @@ export 'entity.dart';
 export 'form.dart';
 export 'logger.dart' show logger;
 export 'models.dart';
-export 'routing.dart' show appSchemeUrl, webUrl, sudokuSolverWebUrl;
+export 'routing.dart' show appSchemeUrl;
 export 'services.dart' hide initServices;
 export 'utils.dart';
 export 'widgets/form.dart';

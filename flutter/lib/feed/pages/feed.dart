@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 import 'package:sudokuSolver/app/module.dart';
-import 'package:sudokuSolver/content/module.dart';
 
 class FeedPage extends StatefulWidget {
   @override
