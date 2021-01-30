@@ -64,14 +64,14 @@ class _BottomTab {
   final L10nStringGetter title;
   final String initialRoute;
 
-  static final values = [feed, discover, challenge, favorite];
+  static final values = [solve, discover, profile];
 
   // We don't use relative URLs as they would start with a '/' and hence the
   // navigator automatically populates our initial back stack with '/'.
-  static final feed = _BottomTab(
-    icon: Icons.dashboard_outlined,
-    title: (s) => s.app_bottomNav_stream,
-    initialRoute: 'feed',
+  static final solve = _BottomTab(
+    icon: Icons.camera_alt_outlined,
+    title: (s) => s.app_bottomNav_camera,
+    initialRoute: 'solve',
   );
   static final discover = _BottomTab(
     key: ValueKey<String>('navigation-discover'),
@@ -79,13 +79,7 @@ class _BottomTab {
     title: (s) => s.app_bottomNav_discover,
     initialRoute: 'discover',
   );
-  static final challenge = _BottomTab(
-    key: ValueKey<String>('navigation-challenge'),
-    icon: Icons.flash_on_outlined,
-    title: (s) => s.app_bottomNav_challenge,
-    initialRoute: 'challenges',
-  );
-  static final favorite = _BottomTab(
+  static final profile = _BottomTab(
     key: ValueKey<String>('navigation-profile'),
     icon: Icons.person,
     title: (s) => s.app_bottomNav_profile,

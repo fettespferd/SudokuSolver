@@ -1,8 +1,8 @@
 {
   "app_bottomNav_challenge": "Challenge",
+  "app_bottomNav_camera": "Camera",
   "app_bottomNav_discover": "Discover",
   "app_bottomNav_profile": "Profile",
-  "app_bottomNav_stream": "Stream",
   "app_error_pageNotFound_message": "404 – We couldn't find the page you were looking for:\n{uri}",
   "app_error_pageNotFound": "Page not found",
   "app_error_unknown": "An internal error occured:\n{error}",

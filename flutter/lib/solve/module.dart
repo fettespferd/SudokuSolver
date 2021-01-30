@@ -1,9 +1,9 @@
 import 'package:flutter_deep_linking/flutter_deep_linking.dart';
 
-import 'pages/feed.dart';
+import 'pages/solve.dart';
 import '../creation/pages/camera/page.dart';
 
-final feedRoutes = Route(
-  matcher: Matcher.path('feed'),
+final solveRoutes = Route(
+  matcher: Matcher.path('solve'),
   materialBuilder: (_, result) => CameraPage(),
 );

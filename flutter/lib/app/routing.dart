@@ -2,9 +2,8 @@ import 'package:black_hole_flutter/black_hole_flutter.dart';
 import 'package:flutter/material.dart' hide Route, Router;
 import 'package:flutter_deep_linking/flutter_deep_linking.dart';
 import 'package:sudokuSolver/auth/module.dart';
-import 'package:sudokuSolver/challenge/module.dart';
 import 'package:sudokuSolver/creation/module.dart';
-import 'package:sudokuSolver/feed/module.dart';
+import 'package:sudokuSolver/solve/module.dart';
 import 'package:sudokuSolver/profile/module.dart';
 import 'package:sudokuSolver/settings/module.dart';
 
@@ -32,9 +31,8 @@ final router = Router(
       matcher: Matcher.webHost(_hostRegExp, isOptional: true),
       routes: [
         authRoutes,
-        challengeRoutes,
         creationRoutes,
-        feedRoutes,
+        solveRoutes,
         settingsRoutes,
         profileRoutes,
       ],

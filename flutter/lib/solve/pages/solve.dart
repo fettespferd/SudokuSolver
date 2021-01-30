@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:sudokuSolver/app/module.dart';
 
-class FeedPage extends StatefulWidget {
+class SolvePage extends StatefulWidget {
   @override
-  _FeedPageState createState() => _FeedPageState();
+  _SolvePageState createState() => _SolvePageState();
 }
 
-class _FeedPageState extends State<FeedPage>
+class _SolvePageState extends State<SolvePage>
     with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
