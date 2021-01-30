@@ -1,14 +1,13 @@
-# sudokuSolver
+# SudokuSolver
 
-This is the second version of the app to be released in Q3 2021.
+This is an app that helps you to solve even the hardest sudokus. You can take a picture or manually input it. Then the smart algorithm will solve the riddle for you.
 
-See our [architecture documentation](./Supporting%20Documents/architecture.md) to get an overview of the code.
+See the [architecture documentation](./Supporting%20Documents/architecture.md) to get an overview of the code.
 
 ## Contributing
 
-If you want to contribute to this project, please see our [contribution guide](contributing.md).
+If you want to contribute to this project, please see the [contribution guide](contributing.md).
 
 ## Deployment
 
-- <kbd>Android</kbd> download the `google-services.json` from [Firebase](https://console.firebase.google.com/u/0/project/smusy-prod/settings/general/android:app.smusy) and store it in `./flutter/android/app/src/release`
-- <kbd>iOS</kbd> download the `GoogleService-Info.plist` from [Firebase](https://console.firebase.google.com/u/0/project/smusy-prod/settings/general/ios:app.smusy) and store it in `./flutter/ios/config/Release`
+- <kbd>Android</kbd> download the `google-services.json` from [Firebase](https://console.firebase.google.com/u/0/project/sudokusolver-7a9be/settings/general/android:app.sudokuSolver.dev) and store it in `./flutter/android/app/src/debug`
