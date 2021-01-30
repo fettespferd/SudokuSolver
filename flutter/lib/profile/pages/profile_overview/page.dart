@@ -1,6 +1,3 @@
-import 'dart:io';
-
-import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:sudokuSolver/app/module.dart';
 
@@ -17,12 +14,10 @@ class _ProfileOverviewPageState extends State<ProfileOverviewPage>
   ProfileCubit cubit = ProfileCubit();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
 
-  bool _isUploading = false;
-
   @override
   void onCubitData(ProfileState state) {
     state.maybeWhen(
-      isUploading: () => _isUploading = true,
+      isUploading: () {},
       noPermission: () {
         _scaffoldKey.showSimpleSnackBar(
           context.s.profile_error_noPermission,
@@ -42,7 +37,19 @@ class _ProfileOverviewPageState extends State<ProfileOverviewPage>
     return Padding(
       padding: const EdgeInsets.all(50),
       child: Column(
-        children: [],
+        children: [
+          ElevatedButton(
+            child: Text('Ausloggen'),
+            onPressed: () async {
+              await services.firebaseAuth.signOut();
+              await context.rootNavigator.pushReplacementNamed('/login');
+            },
+          ),
+          ElevatedButton(
+            child: Text('Einstellungen'),
+            onPressed: () => context.rootNavigator.pushNamed('/settings'),
+          ),
+        ],
       ),
     );
   }

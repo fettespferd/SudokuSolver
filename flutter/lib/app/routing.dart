@@ -61,7 +61,6 @@ class NotFoundPage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            // TODO(JonasWanke): remove this button when we have a proper way to sign-out
             ElevatedButton(
               child: Text('Ausloggen'),
               onPressed: () async {
@@ -69,7 +68,6 @@ class NotFoundPage extends StatelessWidget {
                 await context.rootNavigator.pushReplacementNamed('/login');
               },
             ),
-            // TODO(JonasWanke): remove this button when we have a proper way to open the settings
             ElevatedButton(
               child: Text('Einstellungen'),
               onPressed: () => context.rootNavigator.pushNamed('/settings'),

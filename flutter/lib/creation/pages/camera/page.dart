@@ -3,7 +3,6 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:sudokuSolver/app/module.dart';
 
-import '../edit/cubit.dart';
 import 'cropped_camera_preview.dart';
 import 'cubit.dart';
 
@@ -65,34 +64,8 @@ class _CameraPageState extends State<CameraPage>
         child: Column(
           children: [
             Spacer(),
-            Align(alignment: Alignment.centerLeft, child: _buildLeftControls()),
-            Spacer(),
             _buildBottomControls(),
           ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildLeftControls() {
-    return IconButton(
-      padding: EdgeInsets.all(8),
-      onPressed: () {
-        if (!cubit.selectGradient()) return;
-        context.navigator.pushNamed('creation/edit?backgroundType=gradient');
-      },
-      icon: Material(
-        clipBehavior: Clip.antiAlias,
-        shape: CircleBorder(side: BorderSide(color: Colors.white, width: 2)),
-        child: DecoratedBox(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: Background.defaultGradientColors,
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: SizedBox.expand(),
         ),
       ),
     );
