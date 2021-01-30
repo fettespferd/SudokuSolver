@@ -85,7 +85,10 @@ class _SignInPageState extends State<SignInPage>
               padding: const EdgeInsets.only(right: 60),
               child: FractionallySizedBox(
                 widthFactor: 0.75,
-                child: Text('Sudoku Solver'),
+                child: Text(
+                  'Sudoku Solver',
+                  style: context.textTheme.headline4,
+                ),
               ),
             ),
             SizedBox(height: height * 0.05),
