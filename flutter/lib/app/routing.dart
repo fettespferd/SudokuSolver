@@ -4,6 +4,7 @@ import 'package:flutter_deep_linking/flutter_deep_linking.dart';
 import 'package:sudokuSolver/auth/module.dart';
 import 'package:sudokuSolver/creation/module.dart';
 import 'package:sudokuSolver/solve/module.dart';
+import 'package:sudokuSolver/manual/module.dart';
 import 'package:sudokuSolver/profile/module.dart';
 import 'package:sudokuSolver/settings/module.dart';
 
@@ -35,6 +36,7 @@ final router = Router(
         solveRoutes,
         settingsRoutes,
         profileRoutes,
+        manualRoutes,
       ],
     ),
     Route(materialBuilder: (_, result) => NotFoundPage(result.uri)),

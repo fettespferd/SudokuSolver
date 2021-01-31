@@ -64,7 +64,7 @@ class _BottomTab {
   final L10nStringGetter title;
   final String initialRoute;
 
-  static final values = [solve, profile];
+  static final values = [solve, input, profile];
 
   // We don't use relative URLs as they would start with a '/' and hence the
   // navigator automatically populates our initial back stack with '/'.
@@ -72,6 +72,12 @@ class _BottomTab {
     icon: Icons.camera_alt_outlined,
     title: (s) => s.app_bottomNav_camera,
     initialRoute: 'solve',
+  );
+  static final input = _BottomTab(
+    key: ValueKey<String>('navigation-input'),
+    icon: Icons.create_sharp,
+    title: (s) => s.app_bottomNav_input,
+    initialRoute: 'input',
   );
   static final profile = _BottomTab(
     key: ValueKey<String>('navigation-profile'),
