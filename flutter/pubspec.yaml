@@ -10,7 +10,7 @@ dependencies:
   basics: ^0.4.0+1
   black_hole_flutter: ^0.2.15
   bloc: ^6.1.1
-  camera: ^0.7.0+1
+  camera: ^0.6.4+5
   cloud_firestore: ^0.16.0
   cloud_functions: ^0.9.0
   collection: ^1.14.11
