@@ -64,7 +64,7 @@ class _BottomTab {
   final L10nStringGetter title;
   final String initialRoute;
 
-  static final values = [solve, input, profile];
+  static final values = [input, solve, profile];
 
   // We don't use relative URLs as they would start with a '/' and hence the
   // navigator automatically populates our initial back stack with '/'.

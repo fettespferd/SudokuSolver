@@ -13,6 +13,7 @@ class _ManualInputPageState extends State<ManualInputPage>
   @override
   ProfileCubit cubit = ProfileCubit();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
+  final _formKey = GlobalKey<FormState>();
 
   List<List<int>> currentSudoku = [
     [0, 3, 0, 0, 0, 0, 0, 0, 0],
@@ -62,21 +63,16 @@ class Sudoku extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        AspectRatio(
-            aspectRatio: 1,
-            child: Container(
-                padding: const EdgeInsets.all(0),
-                margin: const EdgeInsets.all(0),
-                child: GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 9,
-                  ),
-                  itemBuilder: _buildGridItems,
-                  itemCount: 81,
-                ))),
-      ],
+    return Container(
+      padding: const EdgeInsets.all(0),
+      margin: const EdgeInsets.all(0),
+      child: GridView.builder(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 9,
+        ),
+        itemBuilder: _buildGridItems,
+        itemCount: 81,
+      ),
     );
   }
 
@@ -85,7 +81,7 @@ class Sudoku extends StatelessWidget {
     x = (index / 9).floor();
     y = index % 9;
     return GestureDetector(
-      onTap: () {}, //_gridItemTapped(x, y),
+      onTap: () {},
       child: GridTile(
         child: Container(
           decoration: BoxDecoration(
@@ -101,9 +97,27 @@ class Sudoku extends StatelessWidget {
   Widget _buildGridItem(int x, int y) {
     switch (sudoku[x][y]) {
       case 0:
-        return Text('');
+        return Center(
+          child: InputField(x, y, sudoku),
+        );
       default:
         return Text(sudoku[x][y].toString());
     }
+  }
+}
+
+class InputField extends StatelessWidget {
+  const InputField(this.row, this.col, this.sudoku);
+
+  final int row;
+  final int col;
+  final List<List<int>> sudoku;
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+        keyboardType: TextInputType.numberWithOptions(),
+        onSaved: (input) {
+          sudoku[row][col] = int.parse(input);
+        });
   }
 }
