@@ -14,6 +14,8 @@ class _ManualInputPageState extends State<ManualInputPage>
   ProfileCubit cubit = ProfileCubit();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>();
+  final _sudokuController = TextEditingController();
+  final _sudokuFocusNode = FocusNode();
 
   List<List<int>> currentSudoku = [
     [0, 3, 0, 0, 0, 0, 0, 0, 0],
@@ -49,7 +51,23 @@ class _ManualInputPageState extends State<ManualInputPage>
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(35),
-      child: Sudoku(sudoku: currentSudoku),
+      child: Container(
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Sudoku(sudoku: currentSudoku),
+          ElevatedButton(
+            child: Text('Sudoku prüfen'),
+            onPressed: () async {},
+          ),
+          ElevatedButton(
+            child: Text('Sudoku lösen'),
+            onPressed: () {
+              cubit.solve(currentSudoku);
+            },
+          ),
+        ],
+      )),
     );
   }
 }
@@ -63,15 +81,17 @@ class Sudoku extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(0),
-      margin: const EdgeInsets.all(0),
-      child: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 9,
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.all(0),
+        margin: const EdgeInsets.all(0),
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 9,
+          ),
+          itemBuilder: _buildGridItems,
+          itemCount: 81,
         ),
-        itemBuilder: _buildGridItems,
-        itemCount: 81,
       ),
     );
   }
@@ -115,7 +135,12 @@ class InputField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-        keyboardType: TextInputType.numberWithOptions(),
+        decoration: InputDecoration(
+          contentPadding: EdgeInsets.zero,
+        ),
+        style: TextStyle(color: Colors.red),
+        keyboardType: TextInputType.number,
+        textInputAction: TextInputAction.next,
         onSaved: (input) {
           sudoku[row][col] = int.parse(input);
         });
