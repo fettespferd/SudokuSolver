@@ -24,6 +24,7 @@ class ProfileCubit extends Cubit<ProfileState> {
     return false;
   }
 
+  //Check if there is an empty list
   bool _emptyCellExists(List<List<int>> currentSudoku, SudokuCell currentCell) {
     for (var row = 0; row < 9; row++) {
       for (var col = 0; col < 9; col++) {
