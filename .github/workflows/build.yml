@@ -1,10 +1,10 @@
 name: Build & Lint
 
 on:
-  //push:
-  //pull_request:
-  //schedule:
-  //  - cron: '0 3 * * *'
+  #push:
+  #pull_request:
+  #schedule:
+  #  - cron: '0 3 * * *'
 
 defaults:
   run:
