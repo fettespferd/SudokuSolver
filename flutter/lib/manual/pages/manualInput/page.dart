@@ -13,7 +13,7 @@ class _ManualInputPageState extends State<ManualInputPage>
   @override
   ProfileCubit cubit = ProfileCubit();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
-  final _formKey = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>(); //this will be used
   final _sudokuController = TextEditingController();
   final _sudokuFocusNode = FocusNode();
 
