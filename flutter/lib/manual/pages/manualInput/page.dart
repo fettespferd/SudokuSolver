@@ -15,7 +15,7 @@ class _ManualInputPageState extends State<ManualInputPage>
   final _scaffoldKey = GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>(); //this will be used
   final _sudokuController = TextEditingController(); //this will be used
-  final _sudokuFocusNode = FocusNode();
+  final _sudokuFocusNode = FocusNode(); //this will be used
 
   List<List<int>> currentSudoku = [
     [0, 3, 0, 0, 0, 0, 0, 0, 0],
